@@ -16,6 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/modern-normalize.css">
   </head>
 
   <body>
@@ -74,6 +75,31 @@
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button data-modal-close class="modal-btn"></button>
+              <form action="" class="form js-modal-form">
+                <h2 class="modal-feedback">Оставьте свои данные, мы вам перезвоним</h2>
+                <div class="form-fild">
+                  <label for="name" class="form-label">Имя</label>
+                  <input type="text" name="name" class="form-input">
+                </div>
+                  <div class="form-fild">
+                    <label for="tel" class="form-label">Телефон</label>
+                    <input type="tel" name="tel" class="form-input">
+                  </div>
+                <div class="form-fild">
+                    <label for="mail" class="form-label">Почта</label>
+                    <input type="email" name="mail" class="form-input">
+                </div>
+                <div class="form-fild">
+                  <label for="comment">Комментарий</label>
+                  <textarea  name="comment" id="comment"  rows="8" placeholder="Введите текст"></textarea>
+                </div>
+                <div class="form-fild-policy">
+                  <input type="checkbox" name="policy" id="policy">
+                  <label for="policy">Соглашаюсь с рассылкой и принимаю</label>
+                  <a href="#">Условия договора</a>
+                </div>
+
+              </form>
             </div>
           </div>
         </div>
